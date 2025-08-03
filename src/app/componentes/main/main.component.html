@@ -1,0 +1,27 @@
+<app-wait-icon *ngIf="loading"></app-wait-icon>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12 text text-center">
+            <h3>Gerenciamento das Fichas de Pacientes</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <label for="keyword">Digite o Paciente a ser Pesquisado</label>
+            <div class="input-group">
+                <input type="text" id="keyword" class="form-control" [(ngModel)]="keyword">
+                <span class="input-group-text">
+                    <button id="sucesso" class="btn" (click)="pesquisar()">Pesquisar</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row" *ngFor="let ITEM of lista">
+        <div class="col-12">
+           <a [routerLink]="['/ficha', ITEM.idFicha]"> {{ITEM.nomePaciente}} </a> 
+        </div>
+</div>
+
+<a [routerLink]="['/ficha', 'NOVA']"><button id="adicionar" style="border: none;"><i class="fa-solid fa-user-plus"></i></button></a>
