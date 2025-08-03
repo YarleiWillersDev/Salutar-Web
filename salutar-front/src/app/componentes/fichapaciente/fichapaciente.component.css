@@ -1,0 +1,49 @@
+.nav-link {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+#foto {
+    border-radius: 50%;
+}
+
+#cabecalho {
+    position: fixed;
+    top: 0%;
+    background-color: white;
+}
+
+#salvar {
+    z-index: 2;
+    border-radius: 50%;
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    width: 70px;
+    height: 60px;
+    background-color: rgb(21, 115, 71);
+    color: white;
+}
+
+#voltar {
+    z-index: 2;
+    border-radius: 50%;
+    position: fixed;
+    left: 2em;
+    bottom: 2em;
+    width: 70px;
+    height: 60px;
+    background-color: rgb(21, 115, 71);
+    color: white;
+}
+
+section {
+    padding: 5em;
+}
+
+textarea{
+    height: 300px;
+    border: 0px solid gray;
+    box-shadow: 2px 4px 8px 1px rgba(163, 163, 163, 1);
+}
